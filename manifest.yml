@@ -1,12 +1,6 @@
 ---
-declared-services:
-  php-mysql-db:
-    label: cleardb
-    plan: cb5
 applications:
-- disk_quota: 256M
-  name: PreSecure
+- disk_quota: 128M
+  name: PHP-PreSecure
   instances: 1
   memory: 256M
-  services:
-    - php-mysql-db
